@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #
 # Beads (bd) installation script
-# Usage: curl -fsSL https://raw.githubusercontent.com/steveyegge/beads/main/scripts/install.sh | bash
+# Usage: curl -fsSL https://raw.githubusercontent.com/snjax/beads/main/scripts/install.sh | bash
 #
 # ⚠️ IMPORTANT: This script must be EXECUTED, never SOURCED
 # ❌ WRONG: source install.sh (will exit your shell on errors)
@@ -46,7 +46,7 @@ release_has_asset() {
 }
 
 # Re-sign binary for macOS to avoid slow Gatekeeper checks
-# See: https://github.com/steveyegge/beads/issues/466
+# See: https://github.com/snjax/beads/issues/466
 resign_for_macos() {
     local binary_path=$1
 
@@ -82,7 +82,7 @@ detect_platform() {
             echo ""
             echo "  This bash installer is for macOS/Linux. On Windows, use the PowerShell installer:"
             echo ""
-            echo "    irm https://raw.githubusercontent.com/steveyegge/beads/main/install.ps1 | iex"
+            echo "    irm https://raw.githubusercontent.com/snjax/beads/main/install.ps1 | iex"
             echo ""
             exit 1
             ;;
@@ -97,7 +97,7 @@ detect_platform() {
         echo "  This will install the Linux version of bd, usable only inside WSL."
         echo "  If you want bd available in native Windows (PowerShell, cmd), use:"
         echo ""
-        echo "    irm https://raw.githubusercontent.com/steveyegge/beads/main/install.ps1 | iex"
+        echo "    irm https://raw.githubusercontent.com/snjax/beads/main/install.ps1 | iex"
         echo ""
         # Only show interactive message and pause if running in a terminal (skip in CI/non-interactive shells)
         if [ -t 0 ]; then
@@ -167,7 +167,7 @@ install_from_release() {
 
     # Get latest release version
     log_info "Fetching latest release..."
-    local latest_url="https://api.github.com/repos/steveyegge/beads/releases/latest"
+    local latest_url="https://api.github.com/repos/snjax/beads/releases/latest"
     local version
     local release_json
 
@@ -191,7 +191,7 @@ install_from_release() {
 
     # Download URL
     local archive_name="beads_${version#v}_${platform}.tar.gz"
-    local download_url="https://github.com/steveyegge/beads/releases/download/${version}/${archive_name}"
+    local download_url="https://github.com/snjax/beads/releases/download/${version}/${archive_name}"
 
     if ! release_has_asset "$release_json" "$archive_name"; then
         log_warning "No prebuilt archive available for platform ${platform}. Falling back to source installation methods."
@@ -321,7 +321,7 @@ verify_binary_has_cgo() {
 install_with_go() {
     log_info "Installing bd using 'go install'..."
 
-    if CGO_ENABLED=1 go install github.com/steveyegge/beads/cmd/bd@latest; then
+    if CGO_ENABLED=1 go install github.com/snjax/beads/cmd/bd@latest; then
         log_success "bd installed successfully via go install"
 
         # Record where we expect the binary to have been installed
@@ -372,7 +372,7 @@ build_from_source() {
     cd "$tmp_dir"
     log_info "Cloning repository..."
 
-    if git clone --depth 1 https://github.com/steveyegge/beads.git; then
+    if git clone --depth 1 https://github.com/snjax/beads.git; then
         cd beads
         log_info "Building binary..."
 
@@ -587,12 +587,12 @@ main() {
     log_error "Installation failed"
     echo ""
     echo "Manual installation:"
-    echo "  1. Download from https://github.com/steveyegge/beads/releases/latest"
+    echo "  1. Download from https://github.com/snjax/beads/releases/latest"
     echo "  2. Extract and move 'bd' to your PATH"
     echo ""
     echo "Or install from source:"
     echo "  1. Install Go from https://go.dev/dl/"
-    echo "  2. Run: CGO_ENABLED=1 go install github.com/steveyegge/beads/cmd/bd@latest"
+    echo "  2. Run: CGO_ENABLED=1 go install github.com/snjax/beads/cmd/bd@latest"
     echo ""
     exit 1
 }

@@ -4,9 +4,9 @@
 
 **Platforms:** macOS, Linux, Windows, FreeBSD
 
-[![License](https://img.shields.io/github/license/steveyegge/beads)](LICENSE)
-[![Go Report Card](https://goreportcard.com/badge/github.com/steveyegge/beads)](https://goreportcard.com/report/github.com/steveyegge/beads)
-[![Release](https://img.shields.io/github/v/release/steveyegge/beads)](https://github.com/steveyegge/beads/releases)
+[![License](https://img.shields.io/github/license/snjax/beads)](LICENSE)
+[![Go Report Card](https://goreportcard.com/badge/github.com/snjax/beads)](https://goreportcard.com/report/github.com/snjax/beads)
+[![Release](https://img.shields.io/github/v/release/snjax/beads)](https://github.com/snjax/beads/releases)
 [![npm version](https://img.shields.io/npm/v/@beads/bd)](https://www.npmjs.com/package/@beads/bd)
 [![PyPI](https://img.shields.io/pypi/v/beads-mcp)](https://pypi.org/project/beads-mcp/)
 
@@ -16,7 +16,7 @@ Beads provides a persistent, structured memory for coding agents. It replaces me
 
 ```bash
 # Install beads CLI (system-wide - don't clone this repo into your project)
-curl -fsSL https://raw.githubusercontent.com/steveyegge/beads/main/scripts/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/snjax/beads/main/scripts/install.sh | bash
 
 # Initialize in YOUR project
 cd your-project
@@ -66,7 +66,7 @@ Beads supports hierarchical IDs for epics:
 
 * **npm:** `npm install -g @beads/bd`
 * **Homebrew:** `brew install beads`
-* **Go:** `go install github.com/steveyegge/beads/cmd/bd@latest`
+* **Go:** `go install github.com/snjax/beads/cmd/bd@latest`
 
 **Requirements:** Linux, FreeBSD, macOS, or Windows.
 
@@ -77,4 +77,4 @@ See [docs/COMMUNITY_TOOLS.md](docs/COMMUNITY_TOOLS.md) for a curated list of com
 ## 📝 Documentation
 
 * [Installing](docs/INSTALLING.md) | [Agent Workflow](AGENT_INSTRUCTIONS.md) | [Copilot Setup](docs/COPILOT_INTEGRATION.md) | [Articles](ARTICLES.md) | [Sync Branch Mode](docs/PROTECTED_BRANCHES.md) | [Troubleshooting](docs/TROUBLESHOOTING.md) | [FAQ](docs/FAQ.md)
-* [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/steveyegge/beads)
+* [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/snjax/beads)
