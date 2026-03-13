@@ -57,12 +57,13 @@ Essential commands: `bd ready`, `bd create`, `bd show`, `bd update`, `bd close`,
 
 ## Session Protocol
 
-1. `bd ready` — Find unblocked work
-2. `bd show <id>` — Get full context
-3. `bd update <id> --claim` — Claim and start work atomically
-4. Add notes as you work (critical for compaction survival)
-5. `bd close <id> --reason "..."` — Complete task
-6. `bd dolt push` — Push to Dolt remote (if configured)
+1. If `.beads/WORKFLOWS.md` exists, read it for custom statuses and transition rules
+2. `bd ready` — Find unblocked work
+3. `bd show <id>` — Get full context
+4. `bd update <id> --claim` — Claim and start work atomically
+5. Add notes as you work (critical for compaction survival)
+6. `bd close <id> --reason "..."` — Complete task
+7. `bd dolt push` — Push to Dolt remote (if configured)
 
 ## Advanced Features
 

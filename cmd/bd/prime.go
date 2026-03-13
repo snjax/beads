@@ -224,6 +224,28 @@ func outputPrimeContext(w io.Writer, mcpMode bool, stealthMode bool) error {
 	return outputCLIContext(w, stealthMode)
 }
 
+// formatWorkflowsForPrime reads .beads/WORKFLOWS.md and returns its content for injection.
+// Checks local .beads/ first, then redirected beadsDir. Returns empty string if not found.
+func formatWorkflowsForPrime() string {
+	beadsDir := beads.FindBeadsDir()
+	if beadsDir == "" {
+		return ""
+	}
+
+	// Try local first, then redirected
+	for _, path := range []string{
+		filepath.Join(".beads", "WORKFLOWS.md"),
+		filepath.Join(beadsDir, "WORKFLOWS.md"),
+	} {
+		// #nosec G304 -- path is constructed from beadsDir which we control
+		content, err := os.ReadFile(path)
+		if err == nil && len(content) > 0 {
+			return "\n## Custom Workflow\n\n" + string(content) + "\n"
+		}
+	}
+	return ""
+}
+
 // formatMemoriesForPrime queries memories from the k/v store and formats them for injection.
 // Returns empty string if no memories or if store is unavailable.
 func formatMemoriesForPrime(compact bool) string {
@@ -314,6 +336,11 @@ func outputMCPContext(w io.Writer, stealthMode bool) error {
 Start: Check ` + "`ready`" + ` tool for available work.
 `
 	_, _ = fmt.Fprint(w, context)
+
+	// Inject custom workflows
+	if wf := formatWorkflowsForPrime(); wf != "" {
+		_, _ = fmt.Fprint(w, wf)
+	}
 
 	// Inject memories (compact for MCP)
 	if mem := formatMemoriesForPrime(true); mem != "" {
@@ -482,6 +509,11 @@ bd dep add beads-yyy beads-xxx  # Tests depend on Feature (Feature blocks tests)
 ` + "```" + `
 `
 	_, _ = fmt.Fprint(w, context)
+
+	// Inject custom workflows
+	if wf := formatWorkflowsForPrime(); wf != "" {
+		_, _ = fmt.Fprint(w, wf)
+	}
 
 	// Inject memories (full format for CLI)
 	if mem := formatMemoriesForPrime(false); mem != "" {
