@@ -34,7 +34,7 @@ buildGoModule {
 
   meta = with lib; {
     description = "beads (bd) - An issue tracker designed for AI-supervised coding workflows";
-    homepage = "https://github.com/steveyegge/beads";
+    homepage = "https://github.com/snjax/beads";
     license = licenses.mit;
     mainProgram = "bd";
     maintainers = [ ];

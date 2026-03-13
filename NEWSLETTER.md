@@ -77,9 +77,9 @@ This release includes work from 10+ external contributors. Matt Wilkie (maphew) 
 ```bash
 brew upgrade bd
 # or
-curl -fsSL https://raw.githubusercontent.com/steveyegge/beads/main/scripts/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/snjax/beads/main/scripts/install.sh | bash
 ```
 
 No breaking changes. If you're running multiple Dolt servers per machine, consider consolidating to a shared server with `bd init --server` for reduced resource usage.
 
-Full changelog: [CHANGELOG.md](CHANGELOG.md) | GitHub release: [v0.60.0](https://github.com/steveyegge/beads/releases/tag/v0.60.0)
+Full changelog: [CHANGELOG.md](CHANGELOG.md) | GitHub release: [v0.60.0](https://github.com/snjax/beads/releases/tag/v0.60.0)

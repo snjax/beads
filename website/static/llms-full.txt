@@ -2,7 +2,7 @@
 
 > This file contains the complete beads documentation for LLM consumption.
 > Generated automatically from the documentation source files.
-> For the web version, visit: https://steveyegge.github.io/beads/
+> For the web version, visit: https://snjax.github.io/beads/
 
 ---
 
@@ -30,7 +30,7 @@ Traditional issue trackers (Jira, GitHub Issues) weren't designed for AI agents.
 brew install beads
 
 # Or quick install (macOS/Linux/FreeBSD)
-curl -fsSL https://raw.githubusercontent.com/steveyegge/beads/main/scripts/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/snjax/beads/main/scripts/install.sh | bash
 
 # Initialize in your project
 cd your-project
@@ -322,7 +322,7 @@ brew install beads
 ### Quick Install Script (All Platforms)
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/steveyegge/beads/main/scripts/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/snjax/beads/main/scripts/install.sh | bash
 ```
 
 The installer will:
@@ -353,7 +353,7 @@ sudo dnf install -y libicu-devel libzstd-devel
 If you see `unicode/uregex.h` missing on macOS, `icu4c` is keg-only. Use:
 ```bash
 ICU_PREFIX="$(brew --prefix icu4c)"
-CGO_CFLAGS="-I${ICU_PREFIX}/include" CGO_CPPFLAGS="-I${ICU_PREFIX}/include" CGO_LDFLAGS="-L${ICU_PREFIX}/lib" go install github.com/steveyegge/beads/cmd/bd@latest
+CGO_CFLAGS="-I${ICU_PREFIX}/include" CGO_CPPFLAGS="-I${ICU_PREFIX}/include" CGO_LDFLAGS="-L${ICU_PREFIX}/lib" go install github.com/snjax/beads/cmd/bd@latest
 ```
 
 ## Platform-Specific Installation
@@ -367,12 +367,12 @@ brew install beads
 
 **Via go install**:
 ```bash
-go install github.com/steveyegge/beads/cmd/bd@latest
+go install github.com/snjax/beads/cmd/bd@latest
 ```
 
 **From source**:
 ```bash
-git clone https://github.com/steveyegge/beads
+git clone https://github.com/snjax/beads
 cd beads
 go build -o bd ./cmd/bd
 sudo mv bd /usr/local/bin/
@@ -395,19 +395,19 @@ paru -S beads-git
 
 **Via go install**:
 ```bash
-go install github.com/steveyegge/beads/cmd/bd@latest
+go install github.com/snjax/beads/cmd/bd@latest
 ```
 
 ### FreeBSD
 
 **Via quick install script**:
 ```bash
-curl -fsSL https://raw.githubusercontent.com/steveyegge/beads/main/scripts/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/snjax/beads/main/scripts/install.sh | bash
 ```
 
 **Via go install**:
 ```bash
-go install github.com/steveyegge/beads/cmd/bd@latest
+go install github.com/snjax/beads/cmd/bd@latest
 ```
 
 ### Windows 11
@@ -420,14 +420,14 @@ Beads ships with native Windows support—no MSYS or MinGW required.
 
 **Via PowerShell script**:
 ```pwsh
-irm https://raw.githubusercontent.com/steveyegge/beads/main/install.ps1 | iex
+irm https://raw.githubusercontent.com/snjax/beads/main/install.ps1 | iex
 ```
 
 The script installs a prebuilt Windows release if available. Go is only required for `go install` or building from source.
 
 **Via go install**:
 ```pwsh
-go install github.com/steveyegge/beads/cmd/bd@latest
+go install github.com/snjax/beads/cmd/bd@latest
 ```
 
 If you see `unicode/uregex.h` missing while building, use the PowerShell install script instead.
@@ -506,7 +506,7 @@ bd is not in your PATH:
 
 ```bash
 # Check if installed
-go list -f {{.Target}} github.com/steveyegge/beads/cmd/bd
+go list -f {{.Target}} github.com/snjax/beads/cmd/bd
 
 # Add Go bin to PATH (add to ~/.bashrc or ~/.zshrc)
 export PATH="$PATH:$(go env GOPATH)/bin"
@@ -518,7 +518,7 @@ This is typically caused by CGO/SQLite compatibility issues:
 
 ```bash
 # Build with CGO enabled
-CGO_ENABLED=1 go install github.com/steveyegge/beads/cmd/bd@latest
+CGO_ENABLED=1 go install github.com/snjax/beads/cmd/bd@latest
 ```
 
 ## Updating bd
@@ -526,13 +526,13 @@ CGO_ENABLED=1 go install github.com/steveyegge/beads/cmd/bd@latest
 ### Quick install script (macOS/Linux/FreeBSD)
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/steveyegge/beads/main/scripts/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/snjax/beads/main/scripts/install.sh | bash
 ```
 
 ### PowerShell installer (Windows)
 
 ```pwsh
-irm https://raw.githubusercontent.com/steveyegge/beads/main/install.ps1 | iex
+irm https://raw.githubusercontent.com/snjax/beads/main/install.ps1 | iex
 ```
 
 ### Homebrew
@@ -544,7 +544,7 @@ brew upgrade beads
 ### go install
 
 ```bash
-go install github.com/steveyegge/beads/cmd/bd@latest
+go install github.com/snjax/beads/cmd/bd@latest
 ```
 
 For post-upgrade steps (hooks, migrations), see [Upgrading](/getting-started/upgrading).
@@ -745,10 +745,10 @@ Use the command that matches your install method.
 
 | Install method | Platforms | Command |
 |---|---|---|
-| Quick install script | macOS, Linux, FreeBSD | `curl -fsSL https://raw.githubusercontent.com/steveyegge/beads/main/scripts/install.sh \| bash` |
-| PowerShell installer | Windows | `irm https://raw.githubusercontent.com/steveyegge/beads/main/install.ps1 \| iex` |
+| Quick install script | macOS, Linux, FreeBSD | `curl -fsSL https://raw.githubusercontent.com/snjax/beads/main/scripts/install.sh \| bash` |
+| PowerShell installer | Windows | `irm https://raw.githubusercontent.com/snjax/beads/main/install.ps1 \| iex` |
 | Homebrew | macOS, Linux | `brew upgrade beads` |
-| go install | macOS, Linux, FreeBSD, Windows | `go install github.com/steveyegge/beads/cmd/bd@latest` |
+| go install | macOS, Linux, FreeBSD, Windows | `go install github.com/snjax/beads/cmd/bd@latest` |
 | npm | macOS, Linux, Windows | `npm update -g @beads/bd` |
 | bun | macOS, Linux, Windows | `bun install -g --trust @beads/bd` |
 | From source (Unix shell) | macOS, Linux, FreeBSD | `git pull && go build -o bd ./cmd/bd` |
@@ -756,13 +756,13 @@ Use the command that matches your install method.
 ### Quick install script (macOS/Linux/FreeBSD)
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/steveyegge/beads/main/scripts/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/snjax/beads/main/scripts/install.sh | bash
 ```
 
 ### PowerShell installer (Windows)
 
 ```pwsh
-irm https://raw.githubusercontent.com/steveyegge/beads/main/install.ps1 | iex
+irm https://raw.githubusercontent.com/snjax/beads/main/install.ps1 | iex
 ```
 
 ### Homebrew
@@ -774,7 +774,7 @@ brew upgrade beads
 ### go install
 
 ```bash
-go install github.com/steveyegge/beads/cmd/bd@latest
+go install github.com/snjax/beads/cmd/bd@latest
 ```
 
 ### From Source
@@ -4198,7 +4198,7 @@ For enhanced UX with slash commands:
 
 ```bash
 # In Claude Code
-/plugin marketplace add steveyegge/beads
+/plugin marketplace add snjax/beads
 /plugin install beads
 # Restart Claude Code
 ```
@@ -4387,7 +4387,7 @@ Git hooks are optional. They auto-sync issues but you can skip them during `bd i
 
 - [MCP Server](/integrations/mcp-server) - Detailed MCP configuration
 - [Installation](/getting-started/installation) - Full install guide
-- [Detailed Copilot Guide](https://github.com/steveyegge/beads/blob/main/docs/COPILOT_INTEGRATION.md) - Comprehensive documentation
+- [Detailed Copilot Guide](https://github.com/snjax/beads/blob/main/docs/COPILOT_INTEGRATION.md) - Comprehensive documentation
 
 </document>
 
@@ -4836,7 +4836,7 @@ Most issues can be diagnosed with `bd status`. Start there before following spec
 If these runbooks don't resolve your issue:
 
 1. Check the [FAQ](/reference/faq)
-2. Search [existing issues](https://github.com/steveyegge/beads/issues)
+2. Search [existing issues](https://github.com/snjax/beads/issues)
 3. Open a new issue with diagnostic output
 
 </document>
@@ -5196,7 +5196,7 @@ storage.UnderlyingDB().Exec(`
 `)
 ```
 
-See [EXTENDING.md](https://github.com/steveyegge/beads/blob/main/docs/EXTENDING.md).
+See [EXTENDING.md](https://github.com/snjax/beads/blob/main/docs/EXTENDING.md).
 
 ## Event System
 
@@ -5246,7 +5246,7 @@ bd list --label "sprint-1" --status open --json | \
 Use beads as a Go library:
 
 ```go
-import "github.com/steveyegge/beads/internal/storage"
+import "github.com/snjax/beads/internal/storage"
 
 db, _ := storage.NewSQLite(".beads/beads.db")
 issues, _ := db.ListIssues(storage.ListOptions{
@@ -5584,9 +5584,9 @@ bd hooks status
 
 ### How do I report a bug?
 
-1. Check existing issues: https://github.com/steveyegge/beads/issues
+1. Check existing issues: https://github.com/snjax/beads/issues
 2. Include: `bd version`, `bd info --json`, reproduction steps
-3. File at: https://github.com/steveyegge/beads/issues/new
+3. File at: https://github.com/snjax/beads/issues/new
 
 </document>
 
@@ -5772,13 +5772,13 @@ Common issues and solutions.
 ```bash
 # Check if installed
 which bd
-go list -f {{.Target}} github.com/steveyegge/beads/cmd/bd
+go list -f {{.Target}} github.com/snjax/beads/cmd/bd
 
 # Add Go bin to PATH
 export PATH="$PATH:$(go env GOPATH)/bin"
 
 # Or reinstall
-go install github.com/steveyegge/beads/cmd/bd@latest
+go install github.com/snjax/beads/cmd/bd@latest
 ```
 
 ### `zsh: killed bd` on macOS
@@ -5786,7 +5786,7 @@ go install github.com/steveyegge/beads/cmd/bd@latest
 CGO/SQLite compatibility issue:
 
 ```bash
-CGO_ENABLED=1 go install github.com/steveyegge/beads/cmd/bd@latest
+CGO_ENABLED=1 go install github.com/snjax/beads/cmd/bd@latest
 ```
 
 ### Permission denied
@@ -5976,7 +5976,7 @@ bd info --json
 uname -a
 ```
 
-Report at: https://github.com/steveyegge/beads/issues
+Report at: https://github.com/snjax/beads/issues
 
 </document>
 
@@ -5984,4 +5984,4 @@ Report at: https://github.com/steveyegge/beads/issues
 
 # End of Documentation
 
-For updates and contributions, visit: https://github.com/steveyegge/beads
+For updates and contributions, visit: https://github.com/snjax/beads

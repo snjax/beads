@@ -6,7 +6,7 @@ description: >
   Use when user wants to customize their kanban/workflow states.
 allowed-tools: "Read,Write,Edit,Bash(bd:*)"
 version: "0.60.0"
-author: "Steve Yegge <https://github.com/steveyegge>"
+author: "Steve Yegge <https://github.com/snjax>"
 license: "MIT"
 ---
 

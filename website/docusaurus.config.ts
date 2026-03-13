@@ -4,9 +4,9 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 // Environment-based URL configuration for fork flexibility
 // SITE_URL: Full URL (e.g., "https://myuser.github.io/beads" or "https://myuser.github.io")
-// ORG_NAME: GitHub organization/user name (defaults to "steveyegge")
+// ORG_NAME: GitHub organization/user name (defaults to "snjax")
 // PROJECT_NAME: Repository/project name (defaults to "beads")
-const orgName = process.env.ORG_NAME || 'steveyegge';
+const orgName = process.env.ORG_NAME || 'snjax';
 const projectName = process.env.PROJECT_NAME || 'beads';
 const siteUrlEnv = process.env.SITE_URL || `https://${orgName}.github.io/${projectName}`;
 
