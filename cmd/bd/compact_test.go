@@ -9,7 +9,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/steveyegge/beads/internal/types"
+	"github.com/snjax/beads/internal/types"
 )
 
 func TestCompactSuite(t *testing.T) {

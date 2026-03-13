@@ -7,9 +7,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/steveyegge/beads/internal/formula"
-	"github.com/steveyegge/beads/internal/storage/dolt"
-	"github.com/steveyegge/beads/internal/types"
+	"github.com/snjax/beads/internal/formula"
+	"github.com/snjax/beads/internal/storage/dolt"
+	"github.com/snjax/beads/internal/types"
 )
 
 func TestParseDistillVar(t *testing.T) {
@@ -3091,7 +3091,7 @@ func TestFormatBondType(t *testing.T) {
 // TestPourRootTitleDescSubstitution verifies that the root molecule's title and description
 // are substituted with {{title}} and {{desc}} variables when pouring a formula.
 // This is a tracer bullet test for GitHub issue #852:
-// https://github.com/steveyegge/beads/issues/852
+// https://github.com/snjax/beads/issues/852
 func TestPourRootTitleDescSubstitution(t *testing.T) {
 	ctx := context.Background()
 	dbPath := t.TempDir() + "/test.db"

@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/steveyegge/beads/internal/config"
-	"github.com/steveyegge/beads/internal/configfile"
-	"github.com/steveyegge/beads/internal/doltserver"
+	"github.com/snjax/beads/internal/config"
+	"github.com/snjax/beads/internal/configfile"
+	"github.com/snjax/beads/internal/doltserver"
 )
 
 // NewFromConfig creates a DoltStore based on the metadata.json configuration.

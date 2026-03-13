@@ -9,7 +9,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/steveyegge/beads/internal/types"
+	"github.com/snjax/beads/internal/types"
 )
 
 // Test #2: Disabled (threshold=0), small closed count → OK

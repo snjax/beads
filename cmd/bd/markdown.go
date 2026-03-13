@@ -11,10 +11,10 @@ import (
 	"strings"
 
 	"github.com/spf13/cobra"
-	"github.com/steveyegge/beads/internal/storage"
-	"github.com/steveyegge/beads/internal/types"
-	"github.com/steveyegge/beads/internal/ui"
-	"github.com/steveyegge/beads/internal/validation"
+	"github.com/snjax/beads/internal/storage"
+	"github.com/snjax/beads/internal/types"
+	"github.com/snjax/beads/internal/ui"
+	"github.com/snjax/beads/internal/validation"
 )
 
 var (

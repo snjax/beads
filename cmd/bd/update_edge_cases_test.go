@@ -24,7 +24,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/steveyegge/beads/internal/types"
+	"github.com/snjax/beads/internal/types"
 )
 
 // TestDualMode_UpdateNonexistentIssue tests that updating a nonexistent ID returns an error.

@@ -8,14 +8,14 @@ import (
 	"time"
 
 	"github.com/spf13/cobra"
-	"github.com/steveyegge/beads/internal/config"
-	"github.com/steveyegge/beads/internal/hooks"
-	"github.com/steveyegge/beads/internal/storage"
-	"github.com/steveyegge/beads/internal/timeparsing"
-	"github.com/steveyegge/beads/internal/types"
-	"github.com/steveyegge/beads/internal/ui"
-	"github.com/steveyegge/beads/internal/utils"
-	"github.com/steveyegge/beads/internal/validation"
+	"github.com/snjax/beads/internal/config"
+	"github.com/snjax/beads/internal/hooks"
+	"github.com/snjax/beads/internal/storage"
+	"github.com/snjax/beads/internal/timeparsing"
+	"github.com/snjax/beads/internal/types"
+	"github.com/snjax/beads/internal/ui"
+	"github.com/snjax/beads/internal/utils"
+	"github.com/snjax/beads/internal/validation"
 )
 
 var updateCmd = &cobra.Command{

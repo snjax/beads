@@ -6,8 +6,8 @@ import (
 	"os"
 	"strings"
 
-	"github.com/steveyegge/beads/internal/config"
-	"github.com/steveyegge/beads/internal/storage"
+	"github.com/snjax/beads/internal/config"
+	"github.com/snjax/beads/internal/storage"
 )
 
 // loadMetadataSchema reads the metadata validation config from YAML and

@@ -10,9 +10,9 @@ import (
 	"strings"
 
 	"github.com/spf13/viper"
-	"github.com/steveyegge/beads/internal/beads"
-	"github.com/steveyegge/beads/internal/configfile"
-	"github.com/steveyegge/beads/internal/storage/dolt"
+	"github.com/snjax/beads/internal/beads"
+	"github.com/snjax/beads/internal/configfile"
+	"github.com/snjax/beads/internal/storage/dolt"
 )
 
 // validRoutingModes are the allowed values for routing.mode

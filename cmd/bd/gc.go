@@ -8,8 +8,8 @@ import (
 	"time"
 
 	"github.com/spf13/cobra"
-	"github.com/steveyegge/beads/internal/beads"
-	"github.com/steveyegge/beads/internal/types"
+	"github.com/snjax/beads/internal/beads"
+	"github.com/snjax/beads/internal/types"
 )
 
 var (

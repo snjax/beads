@@ -3,8 +3,8 @@ package main
 import (
 	"fmt"
 
-	"github.com/steveyegge/beads/internal/beads"
-	"github.com/steveyegge/beads/internal/storage/dolt"
+	"github.com/snjax/beads/internal/beads"
+	"github.com/snjax/beads/internal/storage/dolt"
 )
 
 // ensureDirectMode makes sure the CLI is operating in direct-storage mode.

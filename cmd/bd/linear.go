@@ -9,12 +9,12 @@ import (
 	"strings"
 
 	"github.com/spf13/cobra"
-	"github.com/steveyegge/beads/internal/config"
-	"github.com/steveyegge/beads/internal/debug"
-	"github.com/steveyegge/beads/internal/linear"
-	"github.com/steveyegge/beads/internal/storage/dolt"
-	"github.com/steveyegge/beads/internal/tracker"
-	"github.com/steveyegge/beads/internal/types"
+	"github.com/snjax/beads/internal/config"
+	"github.com/snjax/beads/internal/debug"
+	"github.com/snjax/beads/internal/linear"
+	"github.com/snjax/beads/internal/storage/dolt"
+	"github.com/snjax/beads/internal/tracker"
+	"github.com/snjax/beads/internal/types"
 )
 
 // linearCmd is the root command for Linear integration.

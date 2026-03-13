@@ -11,9 +11,9 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/steveyegge/beads/internal/configfile"
-	"github.com/steveyegge/beads/internal/storage/dolt"
-	"github.com/steveyegge/beads/internal/utils"
+	"github.com/snjax/beads/internal/configfile"
+	"github.com/snjax/beads/internal/storage/dolt"
+	"github.com/snjax/beads/internal/utils"
 )
 
 // MigrationValidationResult provides machine-parseable migration validation output.

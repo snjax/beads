@@ -8,8 +8,8 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/steveyegge/beads/internal/configfile"
-	"github.com/steveyegge/beads/internal/lockfile"
+	"github.com/snjax/beads/internal/configfile"
+	"github.com/snjax/beads/internal/lockfile"
 )
 
 // staleLockAge is the maximum age of a lock file before it's considered stale.

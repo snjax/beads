@@ -9,8 +9,8 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/steveyegge/beads/internal/configfile"
-	"github.com/steveyegge/beads/internal/types"
+	"github.com/snjax/beads/internal/configfile"
+	"github.com/snjax/beads/internal/types"
 )
 
 // DeepValidationResult holds all deep validation check results

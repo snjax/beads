@@ -29,10 +29,10 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/steveyegge/beads/internal/debug"
-	"github.com/steveyegge/beads/internal/storage"
-	"github.com/steveyegge/beads/internal/storage/dolt"
-	"github.com/steveyegge/beads/internal/types"
+	"github.com/snjax/beads/internal/debug"
+	"github.com/snjax/beads/internal/storage"
+	"github.com/snjax/beads/internal/storage/dolt"
+	"github.com/snjax/beads/internal/types"
 )
 
 // MoleculeFileName is the canonical name for molecule catalog files.

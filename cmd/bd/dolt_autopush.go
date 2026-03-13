@@ -8,9 +8,9 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/steveyegge/beads/internal/beads"
-	"github.com/steveyegge/beads/internal/config"
-	"github.com/steveyegge/beads/internal/debug"
+	"github.com/snjax/beads/internal/beads"
+	"github.com/snjax/beads/internal/config"
+	"github.com/snjax/beads/internal/debug"
 )
 
 // pushState tracks auto-push state in a local file (.beads/push-state.json)

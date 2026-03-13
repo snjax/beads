@@ -4,7 +4,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/steveyegge/beads/cmd/bd/doctor"
+	"github.com/snjax/beads/cmd/bd/doctor"
 )
 
 func TestBuildHookMigrationJSON(t *testing.T) {

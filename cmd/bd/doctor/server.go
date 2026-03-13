@@ -12,8 +12,8 @@ import (
 	// Import MySQL driver for server mode connections
 	_ "github.com/go-sql-driver/mysql"
 
-	"github.com/steveyegge/beads/internal/configfile"
-	"github.com/steveyegge/beads/internal/doltserver"
+	"github.com/snjax/beads/internal/configfile"
+	"github.com/snjax/beads/internal/doltserver"
 )
 
 // ServerHealthResult holds the results of all server health checks

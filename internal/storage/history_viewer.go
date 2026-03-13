@@ -3,7 +3,7 @@ package storage
 import (
 	"context"
 
-	"github.com/steveyegge/beads/internal/types"
+	"github.com/snjax/beads/internal/types"
 )
 
 // HistoryViewer provides time-travel queries and diffs.

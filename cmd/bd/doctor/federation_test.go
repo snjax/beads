@@ -8,7 +8,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/steveyegge/beads/internal/configfile"
+	"github.com/snjax/beads/internal/configfile"
 )
 
 func TestCheckFederationRemotesAPI_NonDoltBackend(t *testing.T) {

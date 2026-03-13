@@ -5,10 +5,10 @@ package main
 import (
 	"context"
 
-	"github.com/steveyegge/beads/internal/configfile"
-	"github.com/steveyegge/beads/internal/storage"
-	"github.com/steveyegge/beads/internal/storage/dolt"
-	"github.com/steveyegge/beads/internal/storage/embeddeddolt"
+	"github.com/snjax/beads/internal/configfile"
+	"github.com/snjax/beads/internal/storage"
+	"github.com/snjax/beads/internal/storage/dolt"
+	"github.com/snjax/beads/internal/storage/embeddeddolt"
 )
 
 // newDoltStore creates an embedded Dolt storage backend.

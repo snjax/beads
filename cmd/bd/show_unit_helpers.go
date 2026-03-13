@@ -3,9 +3,9 @@ package main
 import (
 	"context"
 
-	"github.com/steveyegge/beads/internal/storage/dolt"
-	"github.com/steveyegge/beads/internal/types"
-	"github.com/steveyegge/beads/internal/validation"
+	"github.com/snjax/beads/internal/storage/dolt"
+	"github.com/snjax/beads/internal/types"
+	"github.com/snjax/beads/internal/validation"
 )
 
 // validateIssueUpdatable checks if an issue can be updated.

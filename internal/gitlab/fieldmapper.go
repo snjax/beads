@@ -3,8 +3,8 @@ package gitlab
 import (
 	"fmt"
 
-	"github.com/steveyegge/beads/internal/tracker"
-	"github.com/steveyegge/beads/internal/types"
+	"github.com/snjax/beads/internal/tracker"
+	"github.com/snjax/beads/internal/types"
 )
 
 // gitlabFieldMapper implements tracker.FieldMapper for GitLab.

@@ -1,8 +1,8 @@
 package linear
 
 import (
-	"github.com/steveyegge/beads/internal/tracker"
-	"github.com/steveyegge/beads/internal/types"
+	"github.com/snjax/beads/internal/tracker"
+	"github.com/snjax/beads/internal/types"
 )
 
 // linearFieldMapper implements tracker.FieldMapper for Linear.

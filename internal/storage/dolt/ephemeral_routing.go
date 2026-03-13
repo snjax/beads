@@ -7,8 +7,8 @@ import (
 	"log"
 	"strings"
 
-	"github.com/steveyegge/beads/internal/storage"
-	"github.com/steveyegge/beads/internal/types"
+	"github.com/snjax/beads/internal/storage"
+	"github.com/snjax/beads/internal/types"
 )
 
 // IsEphemeralID returns true if the ID belongs to an ephemeral issue.

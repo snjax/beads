@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/steveyegge/beads/internal/types"
+	"github.com/snjax/beads/internal/types"
 )
 
 // AddComment adds a comment event to an issue

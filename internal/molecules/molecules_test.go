@@ -6,10 +6,10 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/steveyegge/beads/internal/storage"
-	"github.com/steveyegge/beads/internal/storage/dolt"
-	"github.com/steveyegge/beads/internal/testutil"
-	"github.com/steveyegge/beads/internal/types"
+	"github.com/snjax/beads/internal/storage"
+	"github.com/snjax/beads/internal/storage/dolt"
+	"github.com/snjax/beads/internal/testutil"
+	"github.com/snjax/beads/internal/types"
 )
 
 // newTestMoleculeStore creates a dolt store on the shared database with branch isolation.

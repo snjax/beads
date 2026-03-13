@@ -9,11 +9,11 @@ import (
 	"go.opentelemetry.io/otel/metric"
 	"go.opentelemetry.io/otel/trace"
 
-	"github.com/steveyegge/beads/internal/storage"
-	"github.com/steveyegge/beads/internal/types"
+	"github.com/snjax/beads/internal/storage"
+	"github.com/snjax/beads/internal/types"
 )
 
-const storageScopeName = "github.com/steveyegge/beads/storage"
+const storageScopeName = "github.com/snjax/beads/storage"
 
 // InstrumentedStorage wraps storage.Storage with OTel tracing and metrics.
 // Every method gets a span and is counted in bd.storage.* metrics.

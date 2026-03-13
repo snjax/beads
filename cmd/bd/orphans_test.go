@@ -6,8 +6,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/steveyegge/beads/cmd/bd/doctor"
-	"github.com/steveyegge/beads/internal/types"
+	"github.com/snjax/beads/cmd/bd/doctor"
+	"github.com/snjax/beads/internal/types"
 )
 
 // mockProvider implements types.IssueProvider for testing

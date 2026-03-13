@@ -8,11 +8,11 @@ import (
 	"time"
 
 	"github.com/spf13/cobra"
-	"github.com/steveyegge/beads/internal/formula"
-	"github.com/steveyegge/beads/internal/storage"
-	"github.com/steveyegge/beads/internal/storage/dolt"
-	"github.com/steveyegge/beads/internal/types"
-	"github.com/steveyegge/beads/internal/ui"
+	"github.com/snjax/beads/internal/formula"
+	"github.com/snjax/beads/internal/storage"
+	"github.com/snjax/beads/internal/storage/dolt"
+	"github.com/snjax/beads/internal/types"
+	"github.com/snjax/beads/internal/ui"
 )
 
 // stepTypeToIssueType converts a formula step type string to a types.IssueType.

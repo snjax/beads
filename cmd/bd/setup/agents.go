@@ -7,7 +7,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/steveyegge/beads/internal/templates/agents"
+	"github.com/snjax/beads/internal/templates/agents"
 )
 
 // AGENTS.md integration markers for beads section

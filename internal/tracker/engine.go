@@ -11,12 +11,12 @@ import (
 	"go.opentelemetry.io/otel/codes"
 	"go.opentelemetry.io/otel/trace"
 
-	"github.com/steveyegge/beads/internal/storage"
-	"github.com/steveyegge/beads/internal/types"
+	"github.com/snjax/beads/internal/storage"
+	"github.com/snjax/beads/internal/types"
 )
 
 // syncTracer is the OTel tracer for tracker sync spans.
-var syncTracer = otel.Tracer("github.com/steveyegge/beads/tracker")
+var syncTracer = otel.Tracer("github.com/snjax/beads/tracker")
 
 // PullHooks contains optional callbacks that customize pull (import) behavior.
 // Trackers opt into behaviors by setting the hooks they need.

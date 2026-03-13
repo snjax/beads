@@ -12,9 +12,9 @@ import (
 	"time"
 
 	"github.com/spf13/cobra"
-	"github.com/steveyegge/beads/internal/storage/dolt"
-	"github.com/steveyegge/beads/internal/ui"
-	"github.com/steveyegge/beads/internal/utils"
+	"github.com/snjax/beads/internal/storage/dolt"
+	"github.com/snjax/beads/internal/ui"
+	"github.com/snjax/beads/internal/utils"
 )
 
 var backupRestoreCmd = &cobra.Command{

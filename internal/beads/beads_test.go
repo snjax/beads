@@ -7,7 +7,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/steveyegge/beads/internal/git"
+	"github.com/snjax/beads/internal/git"
 )
 
 func TestFindDatabasePathEnvVar(t *testing.T) {

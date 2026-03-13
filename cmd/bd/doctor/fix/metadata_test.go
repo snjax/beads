@@ -6,7 +6,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/steveyegge/beads/internal/configfile"
+	"github.com/snjax/beads/internal/configfile"
 )
 
 // TestFixMissingMetadata_NotBeadsWorkspace verifies that FixMissingMetadata

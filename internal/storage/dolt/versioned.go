@@ -4,8 +4,8 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/steveyegge/beads/internal/storage"
-	"github.com/steveyegge/beads/internal/types"
+	"github.com/snjax/beads/internal/storage"
+	"github.com/snjax/beads/internal/types"
 )
 
 // History returns the complete version history for an issue.

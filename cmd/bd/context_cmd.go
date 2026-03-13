@@ -5,9 +5,9 @@ import (
 	"os"
 
 	"github.com/spf13/cobra"
-	"github.com/steveyegge/beads/internal/beads"
-	"github.com/steveyegge/beads/internal/config"
-	"github.com/steveyegge/beads/internal/configfile"
+	"github.com/snjax/beads/internal/beads"
+	"github.com/snjax/beads/internal/config"
+	"github.com/snjax/beads/internal/configfile"
 )
 
 // ContextInfo contains the effective backend identity and repository context.

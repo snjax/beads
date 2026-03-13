@@ -19,10 +19,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/steveyegge/beads/internal/config"
-	"github.com/steveyegge/beads/internal/configfile"
-	"github.com/steveyegge/beads/internal/storage/dolt"
-	"github.com/steveyegge/beads/internal/testutil"
+	"github.com/snjax/beads/internal/config"
+	"github.com/snjax/beads/internal/configfile"
+	"github.com/snjax/beads/internal/storage/dolt"
+	"github.com/snjax/beads/internal/testutil"
 )
 
 // testDoltServerPort is the port of the shared test Dolt server (0 = not running).

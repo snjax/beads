@@ -9,8 +9,8 @@ import (
 	"testing"
 
 	_ "github.com/go-sql-driver/mysql"
-	"github.com/steveyegge/beads/internal/configfile"
-	"github.com/steveyegge/beads/internal/testutil"
+	"github.com/snjax/beads/internal/configfile"
+	"github.com/snjax/beads/internal/testutil"
 )
 
 // openSharedDoltForPhantom returns a *sql.DB connected to a "beads" database on

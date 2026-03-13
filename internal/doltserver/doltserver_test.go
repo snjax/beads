@@ -9,8 +9,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/steveyegge/beads/internal/config"
-	"github.com/steveyegge/beads/internal/configfile"
+	"github.com/snjax/beads/internal/config"
+	"github.com/snjax/beads/internal/configfile"
 )
 
 func TestAllocateEphemeralPort(t *testing.T) {

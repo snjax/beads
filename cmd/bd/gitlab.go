@@ -12,11 +12,11 @@ import (
 	"time"
 
 	"github.com/spf13/cobra"
-	"github.com/steveyegge/beads/internal/config"
-	"github.com/steveyegge/beads/internal/gitlab"
-	"github.com/steveyegge/beads/internal/storage/dolt"
-	"github.com/steveyegge/beads/internal/tracker"
-	"github.com/steveyegge/beads/internal/types"
+	"github.com/snjax/beads/internal/config"
+	"github.com/snjax/beads/internal/gitlab"
+	"github.com/snjax/beads/internal/storage/dolt"
+	"github.com/snjax/beads/internal/tracker"
+	"github.com/snjax/beads/internal/types"
 )
 
 // GitLabConfig holds GitLab connection configuration.

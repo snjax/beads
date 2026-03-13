@@ -10,10 +10,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/steveyegge/beads/cmd/bd/doctor/fix"
-	"github.com/steveyegge/beads/internal/configfile"
-	"github.com/steveyegge/beads/internal/git"
-	"github.com/steveyegge/beads/internal/types"
+	"github.com/snjax/beads/cmd/bd/doctor/fix"
+	"github.com/snjax/beads/internal/configfile"
+	"github.com/snjax/beads/internal/git"
+	"github.com/snjax/beads/internal/types"
 )
 
 // gitCmdTimeout is the timeout for git subprocess commands in doctor checks.
@@ -21,8 +21,8 @@ import (
 const gitCmdTimeout = 30 * time.Second
 
 const (
-	hooksExamplesURL = "https://github.com/steveyegge/beads/tree/main/examples/git-hooks"
-	hooksUpgradeURL  = "https://github.com/steveyegge/beads/issues/615"
+	hooksExamplesURL = "https://github.com/snjax/beads/tree/main/examples/git-hooks"
+	hooksUpgradeURL  = "https://github.com/snjax/beads/issues/615"
 )
 
 // bdShimMarker identifies bd shim hooks (GH#946)

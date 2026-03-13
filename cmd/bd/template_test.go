@@ -12,10 +12,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/steveyegge/beads/internal/formula"
-	"github.com/steveyegge/beads/internal/storage/dolt"
-	"github.com/steveyegge/beads/internal/testutil"
-	"github.com/steveyegge/beads/internal/types"
+	"github.com/snjax/beads/internal/formula"
+	"github.com/snjax/beads/internal/storage/dolt"
+	"github.com/snjax/beads/internal/testutil"
+	"github.com/snjax/beads/internal/types"
 )
 
 // =============================================================================

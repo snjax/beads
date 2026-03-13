@@ -7,9 +7,9 @@ import (
 	"time"
 
 	"github.com/spf13/cobra"
-	"github.com/steveyegge/beads/internal/query"
-	"github.com/steveyegge/beads/internal/types"
-	"github.com/steveyegge/beads/internal/ui"
+	"github.com/snjax/beads/internal/query"
+	"github.com/snjax/beads/internal/types"
+	"github.com/snjax/beads/internal/ui"
 )
 
 var queryCmd = &cobra.Command{

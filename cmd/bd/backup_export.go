@@ -11,9 +11,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/steveyegge/beads/internal/beads"
-	"github.com/steveyegge/beads/internal/config"
-	"github.com/steveyegge/beads/internal/debug"
+	"github.com/snjax/beads/internal/beads"
+	"github.com/snjax/beads/internal/config"
+	"github.com/snjax/beads/internal/debug"
 )
 
 // dbQuerier abstracts query execution so callers can use a retry-wrapped

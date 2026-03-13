@@ -9,7 +9,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/steveyegge/beads/internal/storage/embeddeddolt"
+	"github.com/snjax/beads/internal/storage/embeddeddolt"
 )
 
 func main() {

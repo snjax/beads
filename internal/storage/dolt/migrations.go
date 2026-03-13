@@ -6,7 +6,7 @@ import (
 	"log"
 	"strings"
 
-	"github.com/steveyegge/beads/internal/storage/dolt/migrations"
+	"github.com/snjax/beads/internal/storage/dolt/migrations"
 )
 
 // Migration represents a single schema migration for Dolt.

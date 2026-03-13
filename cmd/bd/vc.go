@@ -7,7 +7,7 @@ import (
 	"strings"
 
 	"github.com/spf13/cobra"
-	"github.com/steveyegge/beads/internal/ui"
+	"github.com/snjax/beads/internal/ui"
 )
 
 var vcCmd = &cobra.Command{

@@ -16,8 +16,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/steveyegge/beads/internal/testutil"
-	"github.com/steveyegge/beads/internal/types"
+	"github.com/snjax/beads/internal/testutil"
+	"github.com/snjax/beads/internal/types"
 )
 
 // Git Remote Integration Tests

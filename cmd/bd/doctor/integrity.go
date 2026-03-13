@@ -10,9 +10,9 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/steveyegge/beads/internal/beads"
-	"github.com/steveyegge/beads/internal/git"
-	"github.com/steveyegge/beads/internal/storage/dolt"
+	"github.com/snjax/beads/internal/beads"
+	"github.com/snjax/beads/internal/git"
+	"github.com/snjax/beads/internal/storage/dolt"
 )
 
 // CheckIDFormat checks whether issues use hash-based or sequential IDs

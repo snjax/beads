@@ -9,9 +9,9 @@ import (
 
 	"gopkg.in/yaml.v3"
 
-	"github.com/steveyegge/beads/internal/config"
-	"github.com/steveyegge/beads/internal/configfile"
-	"github.com/steveyegge/beads/internal/storage/dolt"
+	"github.com/snjax/beads/internal/config"
+	"github.com/snjax/beads/internal/configfile"
+	"github.com/snjax/beads/internal/storage/dolt"
 )
 
 // multiRepoYAMLConfig represents the types section of config.yaml for YAML unmarshaling.

@@ -9,8 +9,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/steveyegge/beads/internal/config"
-	"github.com/steveyegge/beads/internal/debug"
+	"github.com/snjax/beads/internal/config"
+	"github.com/snjax/beads/internal/debug"
 )
 
 // backupGitDir returns the git working directory for backup operations.

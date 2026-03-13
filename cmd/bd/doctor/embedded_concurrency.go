@@ -5,7 +5,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/steveyegge/beads/internal/configfile"
+	"github.com/snjax/beads/internal/configfile"
 )
 
 // CheckEmbeddedModeConcurrency detects when a project is using Dolt embedded

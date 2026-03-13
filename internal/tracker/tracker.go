@@ -3,8 +3,8 @@ package tracker
 import (
 	"context"
 
-	"github.com/steveyegge/beads/internal/storage"
-	"github.com/steveyegge/beads/internal/types"
+	"github.com/snjax/beads/internal/storage"
+	"github.com/snjax/beads/internal/types"
 )
 
 // IssueTracker is the plugin interface that all tracker integrations must implement.

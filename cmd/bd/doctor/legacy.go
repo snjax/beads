@@ -8,10 +8,10 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/steveyegge/beads/internal/beads"
-	"github.com/steveyegge/beads/internal/config"
-	"github.com/steveyegge/beads/internal/configfile"
-	"github.com/steveyegge/beads/internal/doltserver"
+	"github.com/snjax/beads/internal/beads"
+	"github.com/snjax/beads/internal/config"
+	"github.com/snjax/beads/internal/configfile"
+	"github.com/snjax/beads/internal/doltserver"
 )
 
 // CheckLegacyBeadsSlashCommands detects old /beads:* slash commands in documentation

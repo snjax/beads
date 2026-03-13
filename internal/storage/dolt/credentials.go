@@ -16,7 +16,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/steveyegge/beads/internal/storage"
+	"github.com/snjax/beads/internal/storage"
 )
 
 // Credential storage and encryption for federation peers.

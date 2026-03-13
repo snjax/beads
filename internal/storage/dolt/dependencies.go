@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/steveyegge/beads/internal/types"
+	"github.com/snjax/beads/internal/types"
 )
 
 // isCrossPrefixDep returns true if the two bead IDs have different prefixes,

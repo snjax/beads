@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"path/filepath"
 
-	"github.com/steveyegge/beads/internal/configfile"
-	"github.com/steveyegge/beads/internal/doltserver"
-	"github.com/steveyegge/beads/internal/storage"
-	"github.com/steveyegge/beads/internal/storage/doltutil"
+	"github.com/snjax/beads/internal/configfile"
+	"github.com/snjax/beads/internal/doltserver"
+	"github.com/snjax/beads/internal/storage"
+	"github.com/snjax/beads/internal/storage/doltutil"
 )
 
 // RemoteConsistency fixes remote discrepancies between SQL server and CLI.

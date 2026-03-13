@@ -10,8 +10,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/steveyegge/beads/internal/config"
-	"github.com/steveyegge/beads/internal/storage/dolt"
+	"github.com/snjax/beads/internal/config"
+	"github.com/snjax/beads/internal/storage/dolt"
 )
 
 func TestConfigCommands(t *testing.T) {

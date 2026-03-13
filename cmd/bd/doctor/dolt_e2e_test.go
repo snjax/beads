@@ -14,8 +14,8 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/steveyegge/beads/internal/storage/dolt"
-	"github.com/steveyegge/beads/internal/testutil"
+	"github.com/snjax/beads/internal/storage/dolt"
+	"github.com/snjax/beads/internal/testutil"
 )
 
 // e2eDoctorResult mirrors the JSON output struct from cmd/bd/doctor.go.

@@ -8,10 +8,10 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/steveyegge/beads/cmd/bd/doctor"
-	"github.com/steveyegge/beads/internal/configfile"
-	"github.com/steveyegge/beads/internal/doltserver"
-	"github.com/steveyegge/beads/internal/ui"
+	"github.com/snjax/beads/cmd/bd/doctor"
+	"github.com/snjax/beads/internal/configfile"
+	"github.com/snjax/beads/internal/doltserver"
+	"github.com/snjax/beads/internal/ui"
 )
 
 // runCheckHealth runs lightweight health checks for git hooks.
