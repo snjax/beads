@@ -197,12 +197,12 @@ archives:
 brews:
   - name: bd
     repository:
-      owner: steveyegge
+      owner: snjax
       name: homebrew-beads
       token: "{{ .Env.HOMEBREW_TAP_TOKEN }}"
     directory: Formula
     skip_upload: auto
-    homepage: "https://github.com/steveyegge/beads"
+    homepage: "https://github.com/snjax/beads"
     description: "AI-supervised issue tracker for coding workflows"
     license: "MIT"
     install: |
@@ -236,7 +236,7 @@ changelog:
 
 release:
   github:
-    owner: steveyegge
+    owner: snjax
     name: beads
   draft: false
   prerelease: auto
@@ -255,12 +255,12 @@ release:
 
     **Quick Install (macOS/Linux/FreeBSD):**
     ```bash
-    curl -sSL https://raw.githubusercontent.com/steveyegge/beads/main/scripts/install.sh | bash
+    curl -sSL https://raw.githubusercontent.com/snjax/beads/main/scripts/install.sh | bash
     ```
 
     **Windows (PowerShell):**
     ```powershell
-    irm https://raw.githubusercontent.com/steveyegge/beads/main/install.ps1 | iex
+    irm https://raw.githubusercontent.com/snjax/beads/main/install.ps1 | iex
     ```
 
     **Manual Install:**
