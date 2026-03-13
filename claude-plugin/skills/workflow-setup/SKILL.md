@@ -77,20 +77,27 @@ Write the file using this exact format:
 - Keep descriptions concise (one sentence)
 - Use snake_case for multi-word statuses (e.g. `in_progress`, `tech_audit`)
 
-## Step 4: Sync with CLI
+## Step 4: Register custom statuses with CLI (MANDATORY)
 
-After writing the file, extract status names and register them:
+**CRITICAL:** This step is required. Without it, `bd update --status <custom>` will
+reject custom statuses with an "invalid status" error. The `.beads/WORKFLOWS.md` file
+alone is not enough — statuses MUST be registered via config.
 
 ```bash
 bd config set status.custom "<comma-separated custom statuses>"
 ```
 
-Only include statuses that are NOT built-in. Built-in statuses (do not include in config):
+Only include statuses that are NOT built-in. Built-in statuses (do NOT include):
 `open`, `in_progress`, `blocked`, `deferred`, `closed`, `pinned`, `hooked`
 
 For example, if the workflow adds `research`, `testing`, `review`:
 ```bash
 bd config set status.custom "research,testing,review"
+```
+
+**Always verify** registration worked:
+```bash
+bd config get status.custom
 ```
 
 ## Step 5: Confirm
