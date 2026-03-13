@@ -7,7 +7,7 @@ List beads issues with optional filtering.
 
 ## Basic Filters
 
-- **--status, -s**: Filter by status (open, in_progress, blocked, closed)
+- **--status, -s**: Filter by status (built-in: open, in_progress, blocked, deferred, closed; check `.beads/WORKFLOWS.md` for project-specific statuses)
 - **--priority, -p**: Filter by priority (0-4: 0=critical, 1=high, 2=medium, 3=low, 4=backlog)
 - **--type, -t**: Filter by type (bug, feature, task, epic, chore, decision)
 - **--assignee, -a**: Filter by assignee

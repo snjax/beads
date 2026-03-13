@@ -35,9 +35,15 @@ After closing, check if other work became ready:
 - Use `/beads:ready` to see newly unblocked tasks
 - Start the cycle again
 
+## Custom Workflows
+
+If `.beads/WORKFLOWS.md` exists, it defines project-specific statuses and transition rules.
+Run `/workflow-setup` to create or modify it interactively.
+
 ## Tips
 - **Priority levels**: 0=critical, 1=high, 2=medium, 3=low, 4=backlog
 - **Issue types**: bug, feature, task, epic, chore
+- **Statuses**: built-in (open, in_progress, blocked, deferred, closed) + custom via `.beads/WORKFLOWS.md`
 - **Dependencies**: Use `blocks` for hard dependencies, `related` for soft links
 - **Auto-sync**: Changes are stored in Dolt and synced via `bd dolt push` / `bd dolt pull`
 

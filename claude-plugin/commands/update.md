@@ -7,7 +7,7 @@ Update a beads issue.
 
 If arguments are provided:
 - $1: Issue ID
-- $2: New status (open, in_progress, blocked, closed)
+- $2: New status (built-in: open, in_progress, blocked, deferred, closed; check `.beads/WORKFLOWS.md` for project-specific statuses and transition rules)
 
 If arguments are missing, ask the user for:
 1. Issue ID
